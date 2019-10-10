@@ -18,21 +18,47 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <style media="screen">
-      h1{
+      h2{
         text-align: center;
       }
       div{
         text-align: center;
       }
+      .profile{
+        text-align-center
+      }
+      .profile-frame{
+        display: inline-block;
+        position: relative;
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+        border-radius: 50%;
+      }
+      .profile-pic{
+        margin-left: -70px;
+        margin-top: -80px;
+      }
+
     </style>
   </head>
   <body>
-    <h1>Bradley Ma</h1>
-    <div class="">
-      <img src="resources/chen.eric.jpg" alt="Profile Picture" class="rounded" height="500px">
+    <div class="jumbotron jumbotron-fluid">
+      <h2>Bradley Ma</h2>
+      <div class="">
+        <div class="profile-frame">
+          <img src="resources/Ma.Bradley.jpg" alt="Profile Picture" class="profile-pic" height="500px">
+        </div>
+      </div>
     </div>
+
+
     <br>
-    <div id="hw1" class="text-center">
+    <div id="csci3308hw1" class="text-center">
+        <h3>CSCI 3308</h3>
+        <p class="lead text-muted">Software Development and Tools</p>
+
+      <h5>Homework 1:</h5>
       <a href="csci3308_hw1/form.html" class="btn btn-primary">Form</a>
       <a href="csci3308_hw1/mypage.html" class="btn btn-primary">My Page</a>
       <a href="csci3308_hw1/mypage_bootstrap.html" class="btn btn-primary">My Page - Bootstrap</a>
