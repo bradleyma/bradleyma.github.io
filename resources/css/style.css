@@ -1,24 +1,20 @@
-<style media="screen">
-  h2{
-    text-align: center;
-  }
-  div{
-    text-align: center;
-  }
-  .profile{
-    text-align-center
-  }
-  .profile-frame{
-    display: inline-block;
-    position: relative;
-    width: 300px;
-    height: 300px;
-    overflow: hidden;
-    border-radius: 50%;
-  }
-  .profile-pic{
-    margin-left: -70px;
-    margin-top: -80px;
-  }
-
-</style>
+.jumbotron{
+  background-image: url("https://cdn.myanimelist.net/s/common/uploaded_files/1479902001-2b407fd269aabd46a9faefdbcfb9db26.jpeg");
+  background-size: cover;
+}
+.profile-pic{
+  margin-left: -70px;
+  margin-top: -80px;
+  height: 500px;
+}
+.profile-frame{
+  display: inline-block;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.aboutme{
+  font-size: 25px;
+}
