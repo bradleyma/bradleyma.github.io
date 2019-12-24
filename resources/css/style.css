@@ -64,9 +64,11 @@
     border: none;
     font-size: 18px;
     box-shadow: inset 0 0 0 0 #31302B;
+    -webkit-transition: all ease-in-out 0.8s;
+    -webkit-backface-visibility: hidden;
     transition: all ease-in-out 0.8s;
 }
 .card:hover .card-header{
-    box-shadow: inset 1200px 0 0 0 #2D7EB2;
+    box-shadow: inset 1142px 0 0 0 #2D7EB2;
     color: white;
 }
