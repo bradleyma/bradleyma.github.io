@@ -10,8 +10,8 @@ var projects = {
     'name': 'TicTacToe',
     'date': 'Fall 2019',
     'details': 'Used JavaScript to write a simple Web Based game of Tic Tac Toe. This is currently an ongoing project for improvement.',
-    'git': '',
-    'link': '',
+    'git': 'https://github.com/bradleyyma/tic-tac-toe',
+    'link': 'tic-tac-toe/tic-tac-toe.html',
   },
   'weatherapi':{
     'name': 'Weather API',

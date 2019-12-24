@@ -33,64 +33,61 @@
           <h1>Bradley Ma</h1>
           <div class="container">
             <a href="https://github.com/bradleyyma" target="_blank" class="mr-3">
-              <img src="resources/img/GitHub-Mark-32px.png" alt="GitHub">
-            </a>
+              <img src="resources/img/GitHub-Mark-32px.png" alt="GitHub"></a>
             <a href="https://www.linkedin.com/in/bradleyyma/" target="_blank">
-              <img src="resources/img/LI-In-Bug.png" alt="LinkedIn" height="32px">
-            </a>
-
+              <img src="resources/img/LI-In-Bug.png" alt="LinkedIn" height="32px"></a>
           </div>
         </div>
         <div class="col-4">
           <p class="aboutme">Hi and welcome! My name is Bradley, and I am currently a second year computer science student at the University of Colorado Boulder. I code a bit, but I could definitely learn more. That's what I'm here to do.  </p>
         </div>
-
       </div>
     </div>
+    <div class="myclass">
+        <div class="text-center" id="csci3308">
+          <div class="" id="">
+            <h5>Homework 1:</h5>
+            <a href="csci3308_hw1/form.html" class="btn btn-primary">Form</a>
+            <a href="csci3308_hw1/mypage.html" class="btn btn-primary">My Page</a>
+            <a href="csci3308_hw1/mypage_bootstrap.html" class="btn btn-primary">My Page - Bootstrap</a>
+          </div>
+          <br>
+          <div class="" id="">
+            <h5>Homework 2:</h5>
+            <a href="tic-tac-toe/tic-tac-toe.html" class="btn btn-primary">Tic Tac Toe</a>
+          </div>
 
+        </div>
 
-    <br>
+        <div class="">
+          <h1 style="margin-left: 20%;">Projects</h1>
+          <div class="projects" style="margin-left: 20%; margin-right: 20%;">
+            <script type="text/javascript">
+              for(project in projects){
+                $(".projects").append(`
+                  <div class="card my-5">
+                    <div class="card-header">
+                      <h4 class="d-inline card-title">` + projects[project].name + `</h4>
+                      <h5 class="d-inline text-muted"> &mdash; ` + projects[project].date + `</h5>` +
+                      (projects[project].git != '' ? `<a class="float-right" target="_blank" href="`+ projects[project].git + `"><img src="resources/img/GitHub-Mark-32px.png"></a>`:``) +
+                      (projects[project].link != '' ? `<a class="float-right mr-3" target="_blank" href="` + projects[project].link + `"><button class="website">site</button></a>`:``) +
 
-    <div class="text-center" id="csci3308">
-      <div class="" id="">
-        <h5>Homework 1:</h5>
-        <a href="csci3308_hw1/form.html" class="btn btn-primary">Form</a>
-        <a href="csci3308_hw1/mypage.html" class="btn btn-primary">My Page</a>
-        <a href="csci3308_hw1/mypage_bootstrap.html" class="btn btn-primary">My Page - Bootstrap</a>
-      </div>
-      <br>
-      <div class="" id="">
-        <h5>Homework 2:</h5>
-        <a href="tic-tac-toe/tic-tac-toe.html" class="btn btn-primary">Tic Tac Toe</a>
-      </div>
+                  `</div>
+                    <div class="card-body">
+                      <p class="card-text">` + projects[project].details + `<p>
+                    </div>
+                  </div>
+                  `)
 
-    </div>
+              }
+            </script>
 
-    <div class="">
-      <h1 style="margin-left: 20%;">Projects</h1>
-      <div class="projects" style="margin-left: 20%; margin-right: 20%;">
-        <script type="text/javascript">
-          for(project in projects){
-            $(".projects").append(`
-              <div class="card my-5 ">
-                <div class="card-header">
-                  <h4 class="d-inline card-title">` + projects[project].name + `</h4>
-                  <h5 class="d-inline text-muted"> &mdash; ` + projects[project].date + `</h5>` +
-                  (projects[project].git != '' ? `<a class="float-right" target="_blank" href="`+ projects[project].git + `"><img src="resources/img/GitHub-Mark-32px.png"></a>`:``) +
-
-
-              `</div>
-                <div class="card-body">
-                  <p class="card-text">` + projects[project].details + `<p>
-                </div>
-              </div>
-              `)
-
-          }
-        </script>
-
-      </div>
+          </div>
+        </div>
+        <br><br>
     </div>
     <button id="myBtn" title="Go to top">&#x25B2;</button>
+
+    
   </body>
 </html>

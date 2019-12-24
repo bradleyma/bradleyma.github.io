@@ -1,3 +1,6 @@
+.jumbotron{
+    margin-bottom: 0px;
+}
 .profile-pic{
   margin-left: -70px;
   margin-top: -80px;
@@ -33,5 +36,37 @@
 }
 
 #myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+.myclass{
+    background-image: url(https://cdn.pixabay.com/photo/2017/05/19/06/22/desktop-2325627_960_720.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.website{
+    background-color: white;
+    width: 100px;
+    outline: none;
+    border: 3px ridge black;
+    border-radius: 50px;
+    font-size: 18px;
+    transition: all ease-in-out 0.4s;
+}
+.website:hover{
+    background-color: gray;
+    color: white;
+}
+
+.card-header{
+    outline: none;
+    border: none;
+    font-size: 18px;
+    box-shadow: inset 0 0 0 0 #31302B;
+    transition: all ease-in-out 0.8s;
+}
+.card:hover .card-header{
+    box-shadow: inset 1200px 0 0 0 #2D7EB2;
+    color: white;
 }
