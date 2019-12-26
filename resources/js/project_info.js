@@ -17,8 +17,8 @@ var projects = {
     'name': 'Weather API',
     'date': 'Fall 2019',
     'details': 'Utilized Dark Star API to display the average daily temperature in each state with a respective solid color',
-    'git': '',
-    'link': '',
+    'git': 'https://github.com/bradleyyma/weatherapi',
+    'link': 'weatherapi/index.html',
   }
 
 }
