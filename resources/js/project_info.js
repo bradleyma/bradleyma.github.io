@@ -9,14 +9,14 @@ var projects = {
   'tictactoe':{
     'name': 'TicTacToe',
     'date': 'Fall 2019',
-    'details': 'Used JavaScript to write a simple Web Based game of Tic Tac Toe. This is currently an ongoing project for improvement.',
+    'details': 'Used JavaScript to write a simple two-player Web Based game of Tic Tac Toe. This is currently an ongoing project for improvement.',
     'git': 'https://github.com/bradleyyma/tic-tac-toe',
     'link': 'tic-tac-toe/tic-tac-toe.html',
   },
   'weatherapi':{
     'name': 'Weather API',
     'date': 'Fall 2019',
-    'details': 'Utilized Dark Star API to display the average daily temperature in each state with a respective solid color',
+    'details': 'Utilized Dark Star API to display the current temperature and weather, the next day forcast, and a map visual of the average temperaature for each state in the United States. Utilized javascript and css to style and create responsive colors for respective temperatures',
     'git': 'https://github.com/bradleyyma/weatherapi',
     'link': 'weatherapi/index.html',
   }
