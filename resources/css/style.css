@@ -1,5 +1,6 @@
 .jumbotron{
     margin-bottom: 0px;
+    padding-bottom: 30px;
 }
 .profile-pic{
   margin-left: -70px;
@@ -59,14 +60,12 @@
     background-color: gray;
     color: white;
 }
-.card-header{
-    color: #2D7EB2;
-}
 
 .card-subtitle{
     color: #000000;
 }
 .card-header{
+    color: #2D7EB2;
     outline: none;
     border: none;
     font-size: 18px;
@@ -80,4 +79,8 @@
     background-size: 100% 100%;
     background-color: white;
     color: white;
+}
+
+.resume{
+    margin-top: 10px;
 }
