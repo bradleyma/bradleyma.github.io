@@ -1,6 +1,13 @@
+body{
+    background-image: url('https://images.unsplash.com/photo-1489254877404-9e401f87ce0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1354&q=80');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 .jumbotron{
     margin-bottom: 0px;
     padding-bottom: 30px;
+    background-color: rgba(200, 200, 200, .8);
 }
 .profile-pic{
   margin-left: -70px;
@@ -40,12 +47,12 @@
     background-color: #555; /* Add a dark-grey background on hover */
 }
 
-.myclass{
+/* .myclass{
     background-image: url(https://images.unsplash.com/photo-1489254877404-9e401f87ce0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1354&q=80);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-}
+} */
 
 .website{
     background-color: white;
@@ -80,7 +87,11 @@
     background-color: white;
     color: white;
 }
+.card{
+    background-color: rgba(240,240,240,.9)
+}
 
 .resume{
     margin-top: 10px;
+    color: black;
 }
