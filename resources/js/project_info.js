@@ -16,7 +16,7 @@ var projects = {
   'tictactoe':{
       'name': 'TicTacToe',
       'date': 'Fall 2019',
-      'details': 'Used JavaScript to write a simple two-player Web Based game of Tic Tac Toe. This is currently an ongoing project for improvement.',
+      'details': 'Utilized Javascript to recreate the basic game of TicTacToe. Implemented some basic algorithms for beginner difficulty, but utilized recursive functions to implement the minimax algorithm for TicTacToe. This project was great practice for logical thinking and also working in Javascript, Jquery, HTML.',
       'git': 'https://github.com/bradleyyma/tic-tac-toe',
       'link': 'tic-tac-toe/tic-tac-toe.html',
   },
