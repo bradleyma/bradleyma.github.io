@@ -1,17 +1,25 @@
 $(document).ready(function () {
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
-      $('#myBtn').fadeIn();
-    } else {
-      $('#myBtn').fadeOut();
-    }
-  });
 
-  $('#myBtn').click(function () {
-    $("html, body").animate({
-      scrollTop: 0
-    }, 100);
+    scroll_btn = document.getElementById("scroll")
+    window.onscroll = function(){scrollFunction()};
+
+    function scrollFunction() {
+        if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
+            scroll_btn.style.display = "block";
+        }
+        else{
+            scroll_btn.style.display = "none";
+        }
+    }
+
+
+    $('#scroll').click(function () {
+        $("html, body").animate({
+      scrollTop: 0 }, 100);
       return false;
-  });
+    });
+
+    // $('.jumbotron, .projects').fadeIn(2000);
+    // $('.projects').fadeIn(2000);
 
 });

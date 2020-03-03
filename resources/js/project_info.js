@@ -16,7 +16,7 @@ var projects = {
   'tictactoe':{
       'name': 'TicTacToe',
       'date': 'Fall 2019',
-      'details': 'Utilized Javascript to recreate the basic game of TicTacToe. Implemented some basic algorithms for beginner difficulty, but utilized recursive functions to implement the minimax algorithm for TicTacToe. This project was great practice for logical thinking and also working in Javascript, Jquery, HTML.',
+      'details': 'Utilized Javascript to recreate the basic game of TicTacToe. Implemented a recursive function to implement the minimax algorithm for TicTacToe. This project was great practice for logical thinking and also working in Javascript, Jquery, HTML. </p> <br> <p> <b>Update 2020-</b> Re-coded this project using ReactJS. This was my introduction to ReactJS and learned the structure and basic rules.',
       'git': 'https://github.com/bradleyyma/tic-tac-toe',
       'link': 'tic-tac-toe/tic-tac-toe.html',
   },
