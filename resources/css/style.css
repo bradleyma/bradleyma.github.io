@@ -1,8 +1,26 @@
-body{
-    background-image: url('https://images.unsplash.com/photo-1489254877404-9e401f87ce0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1354&q=80');
+.content:before{
+    background-image: url(../img/background.jpg);
+    content: "";
     background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    position: fixed;
+    right: 0;
+    left: 0;
+    height: 101%;
+    width: 101%;
+    z-index: -1;
+    display: block;
+
+
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -o-filter: blur(4px);
+    -ms-filter: blur(4px);
+    filter: blur(4px);
+}
+.content{
+    left: 0;
+    right: 0;
+    z-index: 1;
     animation: fadein 1.6s;
 }
 .jumbotron{
@@ -17,19 +35,55 @@ body{
 .profile-pic{
   margin-left: -70px;
   margin-top: -80px;
-  height: 500px;
+  height: 400px;
 }
 .profile-frame{
   display: inline-block;
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   overflow: hidden;
   border-radius: 50%;
 }
 .aboutme{
-  font-size: 25px;
+    font-size: 25px;
 }
+.links{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    width: 70%;
+    margin: auto;
+}
+.git{
+    height: 32px;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+.git:hover{
+    height: 36px;
+}
+.linked{
+    height: 32px;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+.linked:hover{
+    height: 36px;
+}
+.resume{
+    height: 35px;
+    border-radius: 12%;
+    border: 1.5px solid #777;
+    background-color: #ddd;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+.resume:hover{
+    background-color: #aaa;
+}
+
+
 #scroll {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
@@ -46,8 +100,8 @@ body{
   font-size: 30px; /* Increase font size */
   width: 50px;
   height: 50px;
-  transition: all 1s linear;
-  -webkit-transtition: all .1s linear;
+  transition: all .1s linear;
+  -webkit-transition: all .1s linear;
 }
 
 #scroll:hover {
