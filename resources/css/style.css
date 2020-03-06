@@ -35,18 +35,27 @@
 .profile-pic{
   margin-left: -70px;
   margin-top: -80px;
-  height: 400px;
+  height: 350px;
 }
 .profile-frame{
   display: inline-block;
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   overflow: hidden;
   border-radius: 50%;
 }
 .aboutme{
     font-size: 25px;
+}
+.carousel > .wrap{
+    color: white;
+    border-right: 0.08em solid #2D7EB2;
+    animation: blink 1s step-end infinite;
+}
+@keyframes blink{
+    from, to {border-color: transparent}
+    50% {border-color: #2D7EB2;}
 }
 .links{
     display: flex;
@@ -137,15 +146,14 @@
     outline: none;
     border: none;
     font-size: 18px;
-    background: linear-gradient(to right, #2D7EB2, #90C1F5);
     background-repeat: no-repeat;
     background-size: 0px 100%;
-    -webkit-transition: all ease-in-out .8s;
-    transition: all ease-in-out .8s;
+    -webkit-transition: all linear .2s;
+    transition: all linear .2s;
 }
 .card:hover .card-header{
     background-size: 100% 100%;
-    background-color: white;
+    background-color: #2D7EB2;
     color: white;
 }
 .card-title{
