@@ -131,7 +131,7 @@
     border: none;
     border-radius: 50px;
     font-size: 18px;
-    transition: all ease-in-out 0.4s;
+    transition: all ease-in-out 0.1s;
 }
 .website:hover{
     background-color: gray;
