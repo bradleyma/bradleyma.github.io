@@ -21,61 +21,90 @@
   </head>
   <body>
     <div class="content">
-        <div class="jumbotron container-fluid">
-          <div class="row justify-content-md-center align-items-center">
-            <div class="col-3 text-center">
-              <div class="profile-frame">
-                <img src="resources/img/Ma.Bradley.jpg" alt="Profile Picture" class="profile-pic">
+        <div class="jumbotron">
+            <div class="header">
+              <div class="row justify-content-center">
+                <div class="col text-center">
+                  <div class="profile-frame">
+                    <img src="resources/img/Ma.Bradley.jpg" alt="Profile Picture" class="profile-pic">
+                  </div>
+                  <h1>Bradley Ma</h1>
+                  <div class="links">
+                    <a href="https://github.com/bradleyyma" target="_blank">
+                      <img src="resources/img/GitHub-Mark-32px.png" alt="GitHub" class="git"></a>
+                    <a href="https://www.linkedin.com/in/bradleyyma/" target="_blank">
+                      <img src="resources/img/LI-In-Bug.png" alt="LinkedIn" height="32px" class="linked"></a>
+                    <a href="https://docs.google.com/document/d/1QOEAiRLSEbMEwohLhvCo5oO6pB2tsH_aj5HqOF6SlG4/edit?usp=sharing" target="_blank">
+                         <button class="resume">Resume</button></a>
+                  </div>
+                </div>
+                <div class="col">
+                  <p class="aboutme">Hi and welcome! I am currently a second year computer science student at the University of Colorado Boulder. I code a bit, but I could definitely learn more. This site is here to show my progress and what I've created so far.  </p>
+                  <p class="aboutme">Currently experiencing
+                      <span class="carousel" data-period="2000" data-rotate='["college.", "Javascript.", "coding in Python.", "club tennis.", "my first internship!", "a pandemic. (Stay safe)"]'>
+                      </span>
+                  </p>
+                </div>
               </div>
-              <h1>Bradley Ma</h1>
-              <div class="links">
-                <a href="https://github.com/bradleyyma" target="_blank">
-                  <img src="resources/img/GitHub-Mark-32px.png" alt="GitHub" class="git"></a>
-                <a href="https://www.linkedin.com/in/bradleyyma/" target="_blank">
-                  <img src="resources/img/LI-In-Bug.png" alt="LinkedIn" height="32px" class="linked"></a>
-                <a href="https://docs.google.com/document/d/1QOEAiRLSEbMEwohLhvCo5oO6pB2tsH_aj5HqOF6SlG4/edit?usp=sharing" target="_blank">
-                     <button class="resume">Resume</button></a>
+                  <!-- Nav tabs -->
+                <ul class="nav nav-tabs justify-cotent-center nav-fill" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#other" role="tab">Other</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Messages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Settings</a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+        <div class="tab-content">
+          <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+              <div id="Projects" class="myclass">
+                    <h1>Projects</h1>
+                    <div class="projects">
+                      <script type="text/javascript">
+                        for(project in projects){
+                          $(".projects").append(`
+                            <div class="card my-5">
+                              <div class="card-header">
+                                <h4 class="d-inline card-title"> ${projects[project].name} </h4>
+                                <h5 class="d-inline card-subtitle"> &mdash; ${projects[project].date} </h5>` +
+                                (projects[project].git != '' ? `<a class="float-right" target="_blank" href="${projects[project].git}"><img src="resources/img/GitHub-Mark-32px.png"></a>`:'') +
+                                (projects[project].link != '' ? `<a class="float-right mr-3" target="_blank" href="${projects[project].link}"><button class="website">site</button></a>`:'') +
+
+                            `</div>
+                              <div class="card-body">
+                                <p class="card-text">${projects[project].details}<p>
+                              </div>
+                            </div>
+                            `)
+
+                        }
+                      </script>
+                    </div>
               </div>
-            </div>
-            <div class="col-4">
-              <p class="aboutme">Hi and welcome! I am currently a second year computer science student at the University of Colorado Boulder. I code a bit, but I could definitely learn more. This site is here to show my progress and what I've created so far.  </p>
-              <p class="aboutme">Currently experiencing
-                  <span class="carousel" data-period="2000" data-rotate='["college.", "Javascript.", "coding in Python.", "club tennis."]'>
-                  </span>
-              </p>
-            </div>
           </div>
-        </div>
-        <div class="myclass">
-            <br>
-            <br>
-            <div class="">
-              <h1 style="margin-left: 20%; color: black;">Projects</h1>
-              <div class="projects" style="margin-left: 20%; margin-right: 20%;">
-                <script type="text/javascript">
-                  for(project in projects){
-                    $(".projects").append(`
-                      <div class="card my-5">
-                        <div class="card-header">
-                          <h4 class="d-inline card-title"> ${projects[project].name} </h4>
-                          <h5 class="d-inline card-subtitle"> &mdash; ${projects[project].date} </h5>` +
-                          (projects[project].git != '' ? `<a class="float-right" target="_blank" href="${projects[project].git}"><img src="resources/img/GitHub-Mark-32px.png"></a>`:'') +
-                          (projects[project].link != '' ? `<a class="float-right mr-3" target="_blank" href="${projects[project].link}"><button class="website">site</button></a>`:'') +
-
-                      `</div>
-                        <div class="card-body">
-                          <p class="card-text">${projects[project].details}<p>
-                        </div>
-                      </div>
-                      `)
-
-                  }
-                </script>
-
+          <div class="tab-pane" id="other" role="tabpanel" aria-labelledby="profile-tab">
+              <h1>Other Page</h1>
+              <h3>Under construction ....</h3>
+              <div class="card">
+                  I'm unsure what I'll put on this page. I've been thinking of whether this site should strictly be a portfolio for my code/programming, or if I should maybe add in a blogging aspect. But for now, I will leave this page with this.
+                  <br>
+                  <br>
+                  However, I do want to say, I got my first internship! I'm currently working on several things, but primarly writing some test cases in python and using pytest. It's exciting to think about the amount of substance I will be learning this summer (2020).
               </div>
-            </div>
-            <br><br>
+          </div>
+          <!-- <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">...</div>
+          <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">...</div> -->
         </div>
+
+
     </div>
     <button id="scroll" title="Go to top">&#x25B2;</button>
 

@@ -26,10 +26,14 @@
 .jumbotron{
     display: fixed;
     margin-bottom: 0px;
-    padding-bottom: 30px;
+    padding-bottom: 0px;
     background-color: rgba(200, 200, 200, .8);
     animation: fadein 2s;
     z-index: 100;
+}
+.header{
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 .profile-pic{
@@ -123,6 +127,23 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
 } */
+
+.myclass{
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+}
+
+#myTab{
+    padding-top: 30px;
+}
+
+.tab-content{
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
 
 .website{
     background-color: white;
