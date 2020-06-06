@@ -1,3 +1,3 @@
-# [bradleyyma.github.io](https://bradleyyma.github.io/)
+# [bradleyma.github.io](https://bradleyma.github.io/)
 
 ## My Personal Website!
