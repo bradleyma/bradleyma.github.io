@@ -1,4 +1,11 @@
 var projects = {
+    'sorting': {
+        'name': 'Sorting Visualizer',
+        'date': 'Fall 2020 - current',
+        'details' : "Visual representation of various common search algorithms. Gained experience working with the basics of React and DOM manipulation. Solidifies and demonstrates my understanding of these algorithms in terms of run time and how they operate.",
+        'git': "https://github.com/bradleyyma/sortvisualizer",
+        'link': 'https://bradleyyma.github.io/sortvisualizer/'
+    },
     'sudoku': {
         'name': 'Sudoku',
         'date': 'Spring 2020',
